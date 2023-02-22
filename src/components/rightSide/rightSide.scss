@@ -1,0 +1,26 @@
+.headerRS {
+    position: 'relative';
+    padding-left: 15px;
+    h4 {
+        margin-top: 5px;
+        margin-left: 5px;
+        padding-top: 5px;
+    }
+    p {
+        margin-top: 0;
+        margin-left: 5px;
+    }
+
+}
+
+.messageContent {
+    margin-left: 15px;
+    p {
+        background-color: aliceblue;
+        border-radius:10px;
+        padding-left: 10px;
+        margin-right: 50px;
+        min-width: 40em;
+        min-height: 2em;
+    }
+}
