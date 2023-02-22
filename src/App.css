@@ -2,15 +2,13 @@
   margin-top: 40px;
   margin-left: 70px;
 }
-
-.leftSide {
+.App .leftSide {
   border-color: brown;
   border-width: 2px;
   border-style: solid;
   border-radius: 10px;
 }
-
-.rightSide {
+.App .rightSide {
   border: 2px solid rgb(187, 78, 78);
   border-radius: 10px;
   margin-left: 20px;
