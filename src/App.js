@@ -1,14 +1,15 @@
-import { Fragment } from "react";
 import { Col, Row } from 'antd';
 import { Typography } from 'antd';
 import "./App.css";
 import LeftSide from "./components/leftSide/LeftSide";
 import RightSide from "./components/rightSide/RightSide";
+import { Provider } from 'react-redux';
+import store from './redux/store'
 const { Title } = Typography;
 
 function App() {
   return (
-    <Fragment>
+    <Provider store={store}>
       <div className='App'>
         <Title level={2}>Messages</Title>
         <Row>
@@ -22,7 +23,7 @@ function App() {
           </Col>
         </Row>
       </div>
-    </Fragment>
+    </Provider>
   );
 }
 

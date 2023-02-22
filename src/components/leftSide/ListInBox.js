@@ -1,39 +1,18 @@
-import React, { Fragment } from 'react'
-
+import React, { Fragment, useEffect } from 'react'
 import { Avatar, List } from 'antd';
+import { useDispatch, useSelector } from 'react-redux';
+import { captureID, ContactList } from '../../redux/messages/Actions';
 
-const contactList = [
-    {
-    user_id: 1,
-    name: "Ahmed",
-    last_messag: "test last message",
-    date: "26/01/2023",
-    image: "https://reqres.in/img/faces/1-image.jpg",
-    },
-    {
-    user_id: 2,
-    name: "Noor",
-    last_messag: "test last message",
-    date: "26/01/2023",
-    image: "https://reqres.in/img/faces/2-image.jpg",
-    },
-    {
-    user_id: 3,
-    name: "Rawan",
-    last_messag: "test last message",
-    date: "26/01/2023",
-    image: "https://reqres.in/img/faces/3-image.jpg",
-    },
-    {
-    user_id: 4,
-    name: "Ali",
-    last_messag: "test last message",
-    date: "26/01/2023",
-    image: "https://reqres.in/img/faces/4-image.jpg",
-    },
-    ]
 
 const ListInBox = () => {
+
+  const contactList = useSelector((state) => state.inbox.data)
+  const clickedMessage = useSelector((state) => state.inbox.clickedMessage)
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(ContactList())
+  },[dispatch])
   
   return (
     <Fragment>
@@ -42,15 +21,15 @@ const ListInBox = () => {
     itemLayout="horizontal"
     dataSource={contactList}
     renderItem={(item) => (
-      <List.Item>
+      <List.Item key={item.user_id} style={{backgroundColor: clickedMessage.user_id === item.user_id ? 'cornflowerblue' : null}}>
         
           <List.Item.Meta
+            onClick={() => {dispatch(captureID(item.user_id))}}
             avatar={<Avatar src={item.image} />}
             title={item.name}
             description={item.last_messag}
           />
           <div>{item.date}</div>
-        
       </List.Item>
     )}
   />
