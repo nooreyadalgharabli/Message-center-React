@@ -5,12 +5,12 @@ const initialState = {
     users: [],
     error: '',
     clickedMessage:{
-        user_id: 1,
-        name: "Ahmed",
-        last_messag: "test last message",
-        date: "26/01/2023",
-        image: "https://reqres.in/img/faces/1-image.jpg",
-        time: '20:55'
+        "user_id": 1,
+        "name": "George",
+        "last_messag": "This is some awesome thinking!",
+        "date": "26/01/2023",
+        "image": "https://reqres.in/img/faces/1-image.jpg",
+        "time": "20: 55"
     }   
     
 }

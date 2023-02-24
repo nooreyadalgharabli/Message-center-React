@@ -41,7 +41,7 @@ const ListInBox = () => {
         </List.Item>
       )}
     />
-  );
-};
+  )
+}
 
 export default ListInBox;

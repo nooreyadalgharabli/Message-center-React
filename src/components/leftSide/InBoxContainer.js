@@ -23,7 +23,7 @@ const items = [
 const InBoxContainer = () => {
   return (
       <div>
-        <Tabs defaultActiveKey="1" items={items} onChange={onChange} />;
+        <Tabs defaultActiveKey="1" items={items} onChange={onChange} centered/>
       </div>
   )
 }

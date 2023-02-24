@@ -27,3 +27,24 @@
 .ant-list-item-meta-title {
     margin: 0;
 }
+
+.ant-input {
+    background-color: #f4f7fa;
+    // border-radius: 30px;
+    // border-start-start-radius: 30px;
+    // border-start-end-radius: 30px;
+    // border-end-end-radius: 30px;
+    // border-end-start-radius: 30px;
+}
+
+:where(.css-dev-only-do-not-override-1km3mtt).ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+    background-color: #f4f7fa;
+}
+
+:where(.css-dev-only-do-not-override-1km3mtt).ant-form-vertical .ant-form-item-label >label {
+    font-weight: bold;
+}
+.ant-avatar {
+    width: 50px;
+    height: 50px;
+}

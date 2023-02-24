@@ -2,6 +2,7 @@ import React, { Fragment, useState } from "react";
 import { Select, Form, Input, Modal, Button } from "antd";
 import { FormOutlined } from "@ant-design/icons";
 
+const { TextArea } = Input;
 const ModalForm = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const showModal = () => {
@@ -45,7 +46,7 @@ const ModalForm = () => {
         >
           
           <Form.Item label="Send to">
-            <Select placeholder='select student'>
+            <Select style={{backgroundColor: '#f4f7fa'}} placeholder='select student'>
               <Select.Option value="demo">Students</Select.Option>
             </Select>
           </Form.Item>
@@ -68,7 +69,7 @@ const ModalForm = () => {
             <Input  placeholder='Enter the subject'/>
           </Form.Item>
           <Form.Item label="Message">
-            <Input placeholder='Enter your message'/>
+            <TextArea placeholder='Enter your message'/>
           </Form.Item>
 
           <Button type="primary" size='large' onClick={() => setIsModalOpen(false)}>Send Message</Button>
