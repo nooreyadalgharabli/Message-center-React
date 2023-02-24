@@ -1,14 +1,16 @@
+body {
+  background-color: #f2f5f9;
+}
 .App {
   margin-top: 40px;
   margin-left: 70px;
+  margin-bottom: 40px;
   .leftSide {
-    border-color:brown;
-    border-width: 2px;
-    border-style: solid;
+    background-color: white;
     border-radius: 10px;
   }
   .rightSide {
-    border: 2px solid rgb(187, 78, 78) ;
+    background-color: white;
     border-radius: 10px;
     margin-left: 20px;
   }

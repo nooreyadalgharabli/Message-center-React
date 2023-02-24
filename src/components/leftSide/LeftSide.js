@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import './leftSide.css'
+import './leftSide.scss'
 import { Divider } from 'antd';
 import HeaderLS from './HeaderLS';
 import SearchLSContainer from './SearchLSContainer';

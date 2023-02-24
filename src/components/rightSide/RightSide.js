@@ -2,7 +2,7 @@ import { Divider } from 'antd'
 import React, { Fragment } from 'react'
 import HeaderRS from './HeaderRS'
 import MessageContent from './MessageContent'
-import './rightSide.css'
+import './rightSide.scss'
 
 const RightSide = () => {
   return (

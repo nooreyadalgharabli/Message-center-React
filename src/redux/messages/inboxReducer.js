@@ -1,7 +1,9 @@
-import { CAPTURE_ID, CONTACT_LIST } from './Types'
+import { CAPTURE_ID, FETCH_USERS_FAILURE, FETCH_USERS_REQUEST, FETCH_USERS_SUCCESS } from './Types'
 
 const initialState = {
-    data:[],
+    loading: false,
+    users: [],
+    error: '',
     clickedMessage:{
         user_id: 1,
         name: "Ahmed",
@@ -15,15 +17,28 @@ const initialState = {
 
 const Reducer = (state = initialState, action) => {
     switch(action.type){
-        case CONTACT_LIST:
+        case FETCH_USERS_REQUEST:
             return {
-                ...state,
-                data: action.payload
+              ...state,
+                loading: true
+            }
+        case FETCH_USERS_SUCCESS:
+            return {
+              ...state,
+                loading: false,
+                users: action.payload,
+                error: ''
+            }
+        case FETCH_USERS_FAILURE:
+            return {
+                loading: false,
+                users: [],
+                error: action.payload
             }
         case CAPTURE_ID:
             return {
                 ...state,
-                clickedMessage: state.data.find(item => item.user_id === action.payload)
+                clickedMessage: state.users.find(item => item.user_id === action.payload)
             }
         default: return state
     }

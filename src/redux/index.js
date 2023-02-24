@@ -1,1 +1,1 @@
-export { ContactList, captureID } from './messages/Actions'
+export { fetchUsers, captureID } from './messages/Actions'

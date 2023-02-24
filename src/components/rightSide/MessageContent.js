@@ -14,15 +14,12 @@ const MessageContent = () => {
     <div className='messageContent'>
         <Space>
             <Avatar size={60} src={clickedMessage.image} icon={<UserOutlined />} />
-
             <div>
                 <Title level={4}>{clickedMessage.name}</Title>
                 <p>{clickedMessage.last_messag}</p>
                 <div style={{position: 'absolute', display: 'flex', right: 100,}}>
                     <Text>{clickedMessage.time}</Text>
                 </div>
-                 
-                
             </div>
         </Space>
     </div>
