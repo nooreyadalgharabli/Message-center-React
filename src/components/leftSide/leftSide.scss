@@ -48,3 +48,25 @@
     width: 50px;
     height: 50px;
 }
+
+.ant-btn {
+    width: 100%;
+    background-color: #5773cc;
+}
+
+:where(.css-dev-only-do-not-override-1km3mtt).ant-modal .ant-modal-title {
+    font-weight: bold;
+}
+
+.ant-modal-close-x {
+    border-radius: 11px;
+    color: white;
+    background-color: #5773cc;
+    .ant-modal-close-icon {
+        font-size: 14px;
+    }
+}
+
+:where(.css-dev-only-do-not-override-1km3mtt).ant-modal .ant-modal-header {
+    margin-bottom: 0;
+}

@@ -35,7 +35,7 @@ const ListInBox = () => {
             }}
             avatar={<Avatar src={item.image} />}
             title={item.name}
-            description={item.last_messag}
+            description={<p style={{overflow: 'hidden'}}>{item.last_messag}</p>}
           />
           <div>{item.time}</div>
         </List.Item>

@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from "react";
-import { Select, Form, Input, Modal, Button } from "antd";
+import { Select, Form, Input, Modal, Button, Divider } from "antd";
 import { FormOutlined } from "@ant-design/icons";
 
 const { TextArea } = Input;
@@ -27,6 +27,8 @@ const ModalForm = () => {
         footer={null}
         onCancel={handleCancel}
       >
+        <p style={{margin:0}}>Messages</p>
+        <Divider></Divider>
         <Form
           labelCol={{
             span: 4,
