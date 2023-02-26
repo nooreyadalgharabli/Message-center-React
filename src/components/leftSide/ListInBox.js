@@ -24,18 +24,20 @@ const ListInBox = () => {
       renderItem={(item) => (
         <List.Item
           key={item.user_id}
+          onClick={() => {
+            dispatch(captureID(item.user_id));
+          }}
           style={{
             backgroundColor:
               clickedMessage.user_id === item.user_id ? "#5773cc" : null,
+            padding: '12px 20px',
           }}
         >
           <List.Item.Meta
-            onClick={() => {
-              dispatch(captureID(item.user_id));
-            }}
             avatar={<Avatar src={item.image} />}
             title={item.name}
-            description={<p style={{overflow: 'hidden'}}>{item.last_messag}</p>}
+            description={<div style={{height:30 }}><p style={{width: '100%', height:'80%' , overflow:'hidden'}}>{item.last_messag}</p></div>}
+            style={{maxHeight: 60,}}
           />
           <div>{item.time}</div>
         </List.Item>

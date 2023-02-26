@@ -21,7 +21,7 @@ const HeaderRS = () => {
             </div>
         </Space>
 
-        <div style={{position: 'absolute', display: 'flex', top: 10, right: 10}}>
+        <div className='headerRSButtons'>
             <Button style={{marginRight: 10}} type="primary" shape="round" icon={<MailOutlined />} size={"large"}>
                 Replay
             </Button>

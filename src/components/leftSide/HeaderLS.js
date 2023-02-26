@@ -1,7 +1,7 @@
 import React from 'react'
 import {  Space, Typography } from 'antd';
-import {  SettingOutlined } from '@ant-design/icons';
 import ModalForm from './ModalForm';
+import { AdjustmentsHorizontal, Archive } from 'tabler-icons-react';
 
 const { Title } = Typography;
 
@@ -17,7 +17,8 @@ const HeaderLS = () => {
 
         <div style={{position: 'absolute', display: 'flex', top: 10, right: 10}}>
             <ModalForm/>
-            <SettingOutlined />
+            <Archive size={28} style={{marginRight:12}}/>
+            <AdjustmentsHorizontal size={28} />
         </div>
     </div>
   )
