@@ -4,7 +4,7 @@ import { CAPTURE_ID, FETCH_USERS_FAILURE, FETCH_USERS_REQUEST, FETCH_USERS_SUCCE
 export const fetchUsers = () => {
     return (dispatch) => {
         dispatch(fetchUsersRequest())
-          axios.get('https://mocki.io/v1/d7300ef8-55c6-4952-81d2-ee6bf890a93c')
+          axios.get('https://mocki.io/v1/8f859fd1-1bc1-4314-8866-0f5c6befe238')
           .then(response => {
             const users = response.data.data
             dispatch(fetchUsersSuccess(users))
