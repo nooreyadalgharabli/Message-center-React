@@ -23,7 +23,7 @@ const items = [
 const InBoxContainer = () => {
   return (
       <div>
-        <Tabs defaultActiveKey="1" items={items} onChange={onChange} centered/>
+        <Tabs defaultActiveKey="1" items={items} onChange={onChange} size='large' centered />
       </div>
   )
 }

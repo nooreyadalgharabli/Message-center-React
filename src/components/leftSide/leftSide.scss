@@ -30,20 +30,8 @@
 
 .ant-input {
     background-color: #f4f7fa;
-    // border-radius: 30px;
-    // border-start-start-radius: 30px;
-    // border-start-end-radius: 30px;
-    // border-end-end-radius: 30px;
-    // border-end-start-radius: 30px;
 }
 
-:where(.css-dev-only-do-not-override-1km3mtt).ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
-    background-color: #f4f7fa;
-}
-
-:where(.css-dev-only-do-not-override-1km3mtt).ant-form-vertical .ant-form-item-label >label {
-    font-weight: bold;
-}
 .ant-avatar {
     width: 50px;
     height: 50px;
@@ -52,6 +40,15 @@
 .ant-btn {
     width: 100%;
     background-color: #5773cc;
+}
+
+///////////// Modal style //////////// 
+:where(.css-dev-only-do-not-override-1km3mtt).ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+    background-color: #f4f7fa;
+}
+
+:where(.css-dev-only-do-not-override-1km3mtt).ant-form-vertical .ant-form-item-label >label {
+    font-weight: bold;
 }
 
 :where(.css-dev-only-do-not-override-1km3mtt).ant-modal .ant-modal-title {
@@ -69,4 +66,51 @@
 
 :where(.css-dev-only-do-not-override-1km3mtt).ant-modal .ant-modal-header {
     margin-bottom: 0;
+}
+
+//////////// Tab style ////////////
+:where(.css-dev-only-do-not-override-1km3mtt).ant-tabs >.ant-tabs-nav .ant-tabs-nav-list, :where(.css-dev-only-do-not-override-1km3mtt).ant-tabs >div>.ant-tabs-nav .ant-tabs-nav-list {
+    width: 100%;
+}
+
+:where(.css-dev-only-do-not-override-1km3mtt)[class^="ant-tabs"] [class^="ant-tabs"], :where(.css-dev-only-do-not-override-1km3mtt)[class*=" ant-tabs"] [class^="ant-tabs"], :where(.css-dev-only-do-not-override-1km3mtt)[class^="ant-tabs"] [class*=" ant-tabs"], :where(.css-dev-only-do-not-override-1km3mtt)[class*=" ant-tabs"] [class*=" ant-tabs"] {
+    width: 100%;
+}
+
+:where(.css-dev-only-do-not-override-1km3mtt).ant-tabs-large >.ant-tabs-nav .ant-tabs-tab {
+    text-align: center;
+    font-size: 20px;
+    // margin: 0;
+    padding-top: 0;
+    // font-weight: bold;
+}
+
+:where(.css-dev-only-do-not-override-1km3mtt).ant-tabs .ant-tabs-tab+.ant-tabs-tab {
+    margin: 0;
+}
+
+////////// input search ///
+
+:where(.css-dev-only-do-not-override-1km3mtt).ant-input-search >.ant-input-group >.ant-input-group-addon:last-child .ant-input-search-button {
+    border-start-start-radius: 16px;
+    border-start-end-radius: 16px;
+    border-end-end-radius: 16px;
+    border-end-start-radius: 16px;
+}
+
+:where(.css-dev-only-do-not-override-1km3mtt).ant-input-search .ant-input-search-button {
+    width: 32px;
+}
+
+:where(.css-dev-only-do-not-override-1km3mtt).ant-btn {
+    padding: 0;
+}
+
+:where(.css-dev-only-do-not-override-1km3mtt).ant-input-search >.ant-input-group >.ant-input-group-addon:last-child {
+    inset-inline-start : -12px
+}
+
+:where(.css-dev-only-do-not-override-1km3mtt).ant-input-group >.ant-input:first-child, :where(.css-dev-only-do-not-override-1km3mtt).ant-input-group .ant-input-group-addon:first-child {
+    border-end-start-radius: 20px;
+    border-start-start-radius: 20px;
 }
